@@ -10,4 +10,12 @@ jobs:
     steps:
       # Runs a single command using the runners shell
       - name: Sync web server contents
-        run: bash $GITHUB_WORKSPACE/sync.sh
+        run: |
+          if [[ $GITHUB_REPOSITORY == "TheBlueZenith/osucollab" ]]; then
+            echo "calling script"
+            bash $GITHUB_WORKSPACE/sync.sh
+            exit 0
+          else
+            echo "skipping workflow"
+            exit 0
+          fi 

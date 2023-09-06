@@ -1,4 +1,4 @@
-name: 'Test Workflow'
+name: 'Update site'
 on:
   workflow_dispatch:
   push:
@@ -9,4 +9,4 @@ jobs:
     runs-on: self-hosted
     steps:
       - name: Sync web server contents
-        run: touch test.txt
+        run: ./sync.sh

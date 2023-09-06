@@ -8,5 +8,8 @@ jobs:
   sync:
     runs-on: self-hosted
     steps:
+      - uses: actions/checkout@v4
+
+      # Runs a single command using the runners shell
       - name: Sync web server contents
-        run: ./sync.sh
+        run: git pull --rebase

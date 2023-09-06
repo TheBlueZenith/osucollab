@@ -12,4 +12,4 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Sync web server contents
-        run: git pull --rebase
+        run: bash $GITHUB_WORKSPACE/sync.sh

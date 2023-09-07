@@ -45,9 +45,9 @@ body {
     border-color: white;
 }
 
-#main>a:active {
-    /* width: 60px; */
-}
+/* #main>a:active {
+    width: 60px;
+} */
 
 @media only screen and (max-width: 410px) {
     #main {

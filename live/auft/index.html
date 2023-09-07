@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>blue zentih</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>osucollab blue zenith</title>
     <style>
         body, h1, h2, ul {
             margin: 0;
@@ -71,35 +73,64 @@
     </style>
 </head>
 <body>
+    <script language="javascript">
+        var userName = window.prompt("name NOW", "");
+        var userAge = window.prompt("age too", "");
+        userAge = parseFloat(userAge);
+
+        if (userAge < 18) {
+            window.location.href = "http://727wysi.quest/";
+        } else {
+            document.write("Hi " + userName + "!");
+            var randomNumber = Math.random();
+
+            if (randomNumber < 0.5) {
+                document.write("<br>Winner!");
+                document.write('<br><a href="http://727wysi.quest/auft/">wow</a>');
+                setTimeout(function () {
+                    window.location.href = "http://727wysi.quest/auft/";
+                }, 1);
+            } else {
+                document.write("<br>LLL");
+                document.write('<br><a href="http://727wysi.quest/">ahahaha</a>');
+                setTimeout(function () {
+                    window.location.href = "http://727wysi.quest/";
+                }, 1);
+                throw new Error("Unlucky user");
+            }
+        }
+    </script>
+
     <header>
-        <h1>da bloo zenit</h1>
+        <h1>The blue zenith stocks</h1>
     </header>
     <div class="container">
-        <h1>zenith placeholder</h1>
+        <h1>Zenith Placeholder</h1>
         <div class="bar-container">
-            <h2>stocks</h2>
+            <h2>Stocks</h2>
             <div class="category">
-                <p>stocks 1</p>
+                <p>Stocks 1</p>
                 <div class="bar" style="width: 75%;"></div>
             </div>
             <div class="category">
-                <p>balls</p>
+                <p>Balls</p>
                 <div class="bar" style="width: 60%;"></div>
             </div>
             <div class="category">
-                <p>super stocks</p>
+                <p>Super Stocks</p>
                 <div class="bar" style="width: 70%;"></div>
             </div>
             <div class="category">
-                <p>bar 72</p>
+                <p>Bar 72</p>
                 <div class="bar" style="width: 72%;"></div>
             </div>
         </div>
         <div class="zenith-news">
-            <h2>fuck</h2>
+            <h2>Fuck</h2>
             <ul>
-                <li>i made the bars blue -travis</li>
-                <li>suisei 727 pp play</li>
+                <img src="miku200.gif" alt="Miku">
+                <li>hello!</li>
+                <li>emu otori meaning smile</li>
             </ul>
         </div>
     </div>

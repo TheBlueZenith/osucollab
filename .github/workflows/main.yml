@@ -1,15 +1,15 @@
-name: 'Update site'
+name: 'Update repository on server'
 on:
   workflow_dispatch:
   push:
     branches:
       - main
 jobs:
-  sync:
+  Sync-changes-with-web-server:
     runs-on: self-hosted
     steps:
       # Runs a single command using the runners shell
-      - name: Sync web server contents
+      - name: Pull repository on Server
         run: |
           if [[ $GITHUB_REPOSITORY == "TheBlueZenith/osucollab" ]]; then
             echo "calling script"

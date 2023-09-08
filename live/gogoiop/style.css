@@ -1,0 +1,68 @@
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgba(68, 67, 67, 0.541);
+}
+#among {
+    background-color: blanchedalmond;
+    font-size: larger;
+    width: 530px;
+    text-align: center;
+    font-size: 3em;
+    color: blue;
+    margin: 0 auto;
+    border-radius: 9px;
+
+}
+
+#suiseigs {
+    background-color: brown;
+    margin: 0 auto;
+    text-align: center;
+    width: 330px;
+    font-size: 3em;
+    border-radius: 9px;
+
+}
+
+#almond {
+    background-color: aqua;
+    margin: 0 auto;
+    text-align: center;
+    width: 330px;
+    font-size: 3em;
+    border-radius: 9px;
+
+    
+}
+
+#osu1 {
+    color: rgba(62, 16, 230, 0.815);
+    margin: 0 auto;
+    font-size: 2em;
+    background-color: blanchedalmond;
+    text-align: center;
+    width: 330px;
+    border-radius: 9px;
+}
+
+#osu2 {
+    color: rgba(100, 42, 350, 0.815);
+    margin: 0 auto;
+    font-size: 2em;
+    background-color: beige;
+    text-align: center;
+    width: 330px;
+    border-radius: 9px;
+    
+    
+}
+
+#fakingbitch {
+    margin:0 auto; 
+    display:block;
+    width: 727px;
+    height: 100px;
+    
+}

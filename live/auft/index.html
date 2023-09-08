@@ -74,33 +74,40 @@
 </head>
 <body>
     <script language="javascript">
-        var userName = window.prompt("name NOW", "");
-        var userAge = window.prompt("age too", "");
-        userAge = parseFloat(userAge);
-
-        if (userAge < 18) {
-            window.location.href = "http://727wysi.quest/";
+        var hasWonCookie = document.cookie.match(/(^|;) ?hasWon=([^;]*)(;|$)/);
+    
+        if (hasWonCookie && hasWonCookie[2] === "true") {
+            document.write("viewing the site because you already won..");
         } else {
-            document.write("Hi " + userName + "!");
-            var randomNumber = Math.random();
-
-            if (randomNumber < 0.5) {
-                document.write("<br>Winner!");
-                document.write('<br><a href="http://727wysi.quest/auft/">wow</a>');
-                setTimeout(function () {
-                    window.location.href = "http://727wysi.quest/auft/";
-                }, 1);
+            var userName = window.prompt("your name NEOW!:", "");
+            var userAge = window.prompt("your age too:", "");
+            userAge = parseFloat(userAge);
+    
+            if (userAge < 18) {
+                window.location.href = "http://727wysi.quest/";
             } else {
-                document.write("<br>LLL");
-                document.write('<br><a href="http://727wysi.quest/">ahahaha</a>');
-                setTimeout(function () {
-                    window.location.href = "http://727wysi.quest/";
-                }, 1);
-                throw new Error("Unlucky user");
+                document.write("Hi " + userName + "!");
+                var randomNumber = Math.random();
+    
+                if (randomNumber < 0.5) {
+                    document.write("<br>Winner!");
+                    document.write('<br><a href="http://727wysi.quest/auft/">wow</a>');
+                    setTimeout(function () {
+                        window.location.href = "http://727wysi.quest/auft/";
+                        document.cookie = "hasWon=true; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+                    }, 1);
+                } else {
+                    document.write("<br>LLL");
+                    document.write('<br><a href="http://727wysi.quest/">ahahaha</a>');
+                    setTimeout(function () {
+                        window.location.href = "http://727wysi.quest/";
+                    }, 1);
+                    throw new Error("Unlucky user");
+                }
             }
         }
     </script>
-
+    
     <header>
         <h1>The blue zenith stocks</h1>
     </header>
@@ -129,8 +136,8 @@
             <h2>Fuck</h2>
             <ul>
                 <img src="miku200.gif" alt="Miku">
-                <li>hello!</li>
-                <li>emu otori meaning smile</li>
+                <li>I made the bars blue - Travis</li>
+                <li>Suisei can't FC KTGster Extreme</li>
             </ul>
         </div>
     </div>

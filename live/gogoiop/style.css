@@ -2,39 +2,51 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    background-color: rgba(68, 67, 67, 0.541);
+    background-color: rgba(10, 1, 1, 0.781);
 }
+
 #among {
-    background-color: blanchedalmond;
+    background-color: rgb(43, 31, 31);
     font-size: larger;
-    width: 530px;
+    width: 1900px;
+    height: 50;
     text-align: center;
-    font-size: 3em;
-    color: blue;
+    font-size: 2em;
+    color: rgb(255, 255, 255);
     margin: 0 auto;
     border-radius: 9px;
+    font-weight: bolder;
+
+
 
 }
 
 #suiseigs {
-    background-color: brown;
+    background-color: rgb(65, 35, 35);
     margin: 0 auto;
     text-align: center;
-    width: 330px;
-    font-size: 3em;
+    width: 600px;
+    font-size: 2em;
     border-radius: 9px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    width: 1000px;
+    height: 40px;
+
+
 
 }
 
 #almond {
-    background-color: aqua;
+    background-color: rgb(65, 35, 35);
     margin: 0 auto;
     text-align: center;
     width: 330px;
     font-size: 3em;
     border-radius: 9px;
+    color: greenyellow;
 
-    
+
 }
 
 #osu1 {
@@ -55,14 +67,46 @@ body {
     text-align: center;
     width: 330px;
     border-radius: 9px;
-    
-    
+
+
 }
 
 #fakingbitch {
-    margin:0 auto; 
-    display:block;
-    width: 727px;
-    height: 100px;
-    
+    margin: 0 auto;
+    display: block;
+    width: 370px;
+    height: 300px;
+
+}
+
+#hikari {
+    background-color: rgb(26, 26, 26);
+    border: rgb(26, 26, 26);
+    border-style: solid;
+    border-radius: 3em;
+    border-width: 10px;
+    text-align: center;
+    margin: 10px;
+    width: 1px;
+    text-decoration: none;
+    color: aliceblue;
+
+}
+
+#osu3 {
+    font-size: x-small;
+    color: rgba(62, 16, 230, 0.815);
+    margin: 0 auto;
+    background-color: blanchedalmond;
+    text-align: center;
+    width: 330px;
+    border-radius: 9px;
+
+}
+
+div {
+    width: calc(103% - 80px);
+    padding: 5px;
+    text-align: center;
+    margin-top: 2em;
 }

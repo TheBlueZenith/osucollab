@@ -1,6 +1,119 @@
 <html>
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
+        li {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 1rem;
+        }
+        a:hover {
+            color: red;
+        }
+        header {
+            position: relative;
+            padding: 0 2rem;
+        }
+        .navbar {
+            width: 100%;
+            height: 60px;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .navbar .logo a {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .navbar .links {
+            display: flex;
+            gap: 2rem;
+        }
+        .navbar .toggle_btn {
+            color: #fff;
+            font-size: 1.5rem;
+            cursor: pointer;
+            display: none;
+        }
+        .action_btn {
+            background-color: lightcyan;
+            color: black;
+            padding: 0.5rem 1rem;
+            border: none;
+            outline: none;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: scale 0.2 ease;
+        }
+        .action_btn:hover {
+            scale: 1.05;
+            color: black;
+        }
+        .action_btn:active {
+            scale: 0.95;
+        }
+        /* Responsive something */
+        @media (max-width: 992px) {
+            .navbar .links,
+            .navbar .action_btn {
+                display: none;
+            }
+
+            .navbar .toggle_btn {
+                display: block;
+            }
+
+            .dropdown_menu {
+                display: block;
+            }
+        }
+        /* middle section */
+        section#hero {
+            height: calc(100vh - 60px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: black;
+            font-size: larger;
+        }
+        /* dropdown */
+        .dropdown_menu {
+            display: none;
+            position: absolute;
+            right: 2rem;
+            top: 60px;
+            height: 0;
+            width: 300px;
+            background: red;
+            backdrop-filter: blur(15px);
+            border-radius: 10px;
+            overflow: hidden;
+            transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .dropdown_menu.open {
+            height: 240px;
+
+        }
+        .dropdown_menu li {
+            padding: 0.7rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .dropdown_menu .action_btn {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
         section {
             position: relative;
             width: 100%;
@@ -74,79 +187,60 @@
                 background-position-x: 1000px;
             }
         }
-        button {
-            color: #3586ff;
-            background-color: antiquewhite;
-         
-        }
-        #zaza {
-            padding: 1px 857px;
-            text-align: center;
-            margin: 0;
-            font-size: large;
-            color: white;
-            
-        }
-         #saas2 {
-            text-decoration: none;
-            color: white;
-            font-size: larger;
-            font-style: italic;
-        }
-        body {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            height: 100%;
-            align-items: center;
-            font-size: larger; 
-            margin: 0;
-            
-        }
-        #steamaccount {
-            border:  2px solid black;
-            padding: 10px;
-            text-decoration: none;
-            background-color: black;
-            color: white;
-            text-align: center;
-        }
+        
         
     </style>
     <title> swagger</title>
 </head>
 
 <body>
-    <body style="background-color: black;"></body>
+    <body style="background-color: #3586ff;"></body>
     <header>
-    <h2 id="zaza">Carlost's Website Progress</h2>
+    <div class="navbar">
+        <div class="logo"><a href="#">Carlost's Web</a></div>
+        <ul class="links">
+            <li><a href="https://steamcommunity.com/id/vtuberamongus/">Steam</a></li>
+            <li><a href="https://osu.ppy.sh/users/17224680">Osu</a></li>
+            <li><a href="https://www.faceit.com/en/players/zneetsu">Faceit</a></li>
+            <li><a href="d">None</a></li>
+        </ul>
+        <a href="adsa" class="action_btn">Get these nuts</a>
+        <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+
+    <div class="dropdown_menu open">
+        <li><a href="a">waa</a></li>
+            <li><a href="b">daa</a></li>
+            <li><a href="c">baa</a></li>
+            <li><a href="d">haa</a></li>
+            <li><a href="adsa" class="action_btn">Get these nuts</a></li>
+    </div>
     </header>
-    <br>
-    <a id="saas2">Links:
-    <br>
-    <a id="steamaccount" href="https://steamcommunity.com/id/vtuberamongus/">Steam Account</a>
-    <br>
-    <button>Funny Looking</button>
-    <br>
-    <img src="kafka.gif" alt="kafka" style="width: 300px;height:300px;">
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    <main>
+        <section id="hero">
+            <h1>Help</h1>
+            <p>
+                The Bars Icon isn't working wtf 
+            </p>
+        </section>
+    </main>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropdownMenu = document.querySelector('.dropdown_menu')
+
+        toglgeBtn.onclick = function () {
+            dropdownMenu.classList.toggle('open')
+            const isOpen = dropdownMenu.classList.contains('open')
+
+            toggleBtnIcon.classlist = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
     
     <section>
         <div class="wave wave1"></div>

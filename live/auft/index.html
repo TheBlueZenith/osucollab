@@ -84,23 +84,23 @@
             userAge = parseFloat(userAge);
     
             if (userAge < 18) {
-                window.location.href = "http://727wysi.quest/";
+                window.location.href = "https://thebluezenith.github.io/osucollab";
             } else {
                 document.write("Hi " + userName + "!");
                 var randomNumber = Math.random();
     
                 if (randomNumber < 0.5) {
                     document.write("<br>Winner!");
-                    document.write('<br><a href="http://727wysi.quest/auft/">wow</a>');
+                    document.write('<br><a href="https://thebluezenith.github.io/osucollab/live/auft">wow</a>');
                     setTimeout(function () {
-                        window.location.href = "http://727wysi.quest/auft/";
+                        window.location.href = "https://thebluezenith.github.io/osucollab/live/auft";
                         document.cookie = "hasWon=true; expires=Fri, 31 Dec 9999 23:59:59 GMT";
                     }, 1);
                 } else {
                     document.write("<br>LLL");
-                    document.write('<br><a href="http://727wysi.quest/">ahahaha</a>');
+                    document.write('<br><a href="https://thebluezenith.github.io/osucollab">ahahaha</a>');
                     setTimeout(function () {
-                        window.location.href = "http://727wysi.quest/";
+                        window.location.href = "https://thebluezenith.github.io/osucollab";
                     }, 1);
                     throw new Error("Unlucky user");
                 }
